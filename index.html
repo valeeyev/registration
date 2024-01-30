@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>demo</title>
+    <link rel="stylesheet" href="style.css" />
+    <script async src="main.js"></script>
+  </head>
+  <body>
+    <div class="container border">
+      <div class="auth-form">
+        <div class="register-form">
+          <h2>Registration Form</h2>
+          <form id="registrationForm">
+            <!-- Registration Form Inputs -->
+            <div class="inputs">
+              <label for="firstName">First Name:</label>
+              <input type="text" id="firstName" autocomplete="on" />
+            </div>
+            <div class="inputs">
+              <label for="lastName">Last Name:</label>
+              <input type="text" id="lastName" autocomplete="on" />
+            </div>
+            <div class="inputs">
+              <label for="phone">Phone:</label>
+              <input type="text" id="phone" autocomplete="on" />
+            </div>
+            <div class="inputs">
+              <label for="parentFirstName">Parent First Name:</label>
+              <input type="text" id="parentFirstName" autocomplete="on" />
+            </div>
+            <div class="inputs">
+              <label for="parentLastName">Parent Last Name:</label>
+              <input type="text" id="parentLastName" autocomplete="on" />
+            </div>
+            <div class="inputs">
+              <label for="parentPhone">*Parent's Phone Number:</label>
+              <input type="number" id="parentPhone" autocomplete="" />
+            </div>
+            <div class="inputs">
+              <label for="Password">*Password:</label>
+              <input type="password" id="Password" autocomplete="on" />
+            </div>
+          </form>
+          <button class="registration-button" onclick="registration()">
+            Register
+          </button>
+        </div>
+        <div class="login-form" style="display: none">
+          <h2>Login Form</h2>
+          <form id="loginForm">
+            <!-- Login Form Inputs -->
+            <div class="inputs">
+              <label for="loginFirstname">first name:</label>
+              <input type="text" id="loginFirstname" autocomplete="on" />
+            </div>
+            <div class="inputs">
+              <label for="loginPassword">Password:</label>
+              <input type="password" id="loginPassword" autocomplete="on" />
+            </div>
+          </form>
+          <button class="login-button" onclick="login()">Login</button>
+        </div>
+        <button class="switch" onclick="toggleForm()">Switch</button>
+      </div>
+    </div>
+  </body>
+</html>
